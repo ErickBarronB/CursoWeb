@@ -68,6 +68,7 @@ footer {
     100% {
         background-color: white;
         color: black;
+        padding: 15;
     }
 }
 .imagenescontacto-1 {
