@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.gridpadre {
+    height: 100vh;
+    background-image: url(../imagenes/bg.jpg);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr 0.4fr;
+    grid-template-areas:
+    "nav nav nav nav"
+    "main main main main"
+    "contenido contenido contenido contenido"
+    "contenido2 contenido2 contenido2 contenido2"
+    " footer footer footer footer" ;
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    grid-area: nav;
+
+}
+
+main {
+    background-color: rgb(0, 0, 0);
+    grid-area: main;
+}
+
+#sidebar {
+    background-color: blue;
+    grid-area: sidebar;
+}
+
+#contenido {
+    background-color: rgb(0, 0, 0);
+    grid-area: contenido;
+    border-bottom: 2px solid white;
+
+
+}
+
+#contenido2 {
+    background-color: rgb(0, 0, 0);
+    grid-area: contenido2;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    grid-area: footer;
+
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 6px;
+    list-style: none;
+    
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 7px;
+}
+
+.navbar ul li a:hover {
+    animation: boton 0.4s forwards;
+}
+
+@keyframes boton {
+    100% {
+        background-color: white;
+        color: black;
+    }
+}
+
+.contenido-main {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.contenido-main img {
+    height: 200px;
+    margin-top: 10px;
+    width: 200px;
+    border: 0.1px solid white;
+    border-radius: 200px;
+}
+
+.contenido-main-texto {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contenido-main-texto p {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.contenido-main-texto-servicio {
+    text-decoration: underline;
+    
+}
+
+.tituloquien {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    background-color: white;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+
+.imagenescontacto {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.imagenescontacto-1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    padding: 7px;
+    width: 150px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.imagenescontacto-1 h2 {
+    text-align: center;
+    font-size: 22px;
+}
+
+.imagenescontacto-1 img {
+    height: 120px;
+    width: 120px;
+    border: 2px solid white;
+    border-radius: 40px;
+}
+
+.imagenescontacto-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 7px;
+    width: 150px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.imagenescontacto-2 img {
+    height: 120px;
+    width: 120px;
+    border: 2px solid white;
+    border-radius: 40px;
+}
+
+#contenido2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido2-titulo {
+    color: white;
+}
+.contenido2-mapa {
+    margin-bottom: 12px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+@media only screen and (max-width: 720px) {
+
+    .gridpadre {
+        height: 100vh;
+        background-image: url(../imagenes/bg.jpg);
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr 1fr 0.4fr;
+        grid-template-areas:
+        "nav nav nav nav"
+        "main main main main"
+        "contenido contenido contenido contenido"
+        "contenido2 contenido2 contenido2 contenido2"
+        " footer footer footer footer" ;
+    }
+        
+
+
+}

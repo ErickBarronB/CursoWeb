@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.gridpadre {
+    background-image: url(../imagenes/bg.jpg);
+    display: grid;
+    height: 100vh;
+    grid-gap: 10px;
+    grid-template-rows: 33px 1fr 0.031fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "nav"
+    "preg"
+    "footer"
+    
+}
+
+
+.navbar {
+    grid-area: nav;
+    background-color: black;
+}
+
+#preguntas {
+    grid-area: preg;
+    background-color: black;
+
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+}
+
+
+
+
+#preguntas {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preguntas-titulo {
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+
+
+.preguntas-preguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+
+.preguntas-preguntas p {
+    text-align: center;
+}
+
+
+
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 6px;
+    list-style: none;
+    
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 7px;
+}
+
+.navbar ul li a:hover {
+    animation: boton 0.4s forwards;
+}
+
+@keyframes boton {
+    100% {
+        background-color: white;
+        color: black;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+}
+
+
+
+@media only screen and (max-width: 740px) {
+    .gridpadre {
+        background-color: red;
+    }
+
+    #preguntas {
+        display: flex;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .preguntas-titulo {
+        margin-top: 20px;
+        font-size: 30px;
+        margin-bottom: 100px;
+    }
+    
+    
+    
+    .preguntas-preguntas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .preguntas-preguntas h2 {
+        font-size: 30px;
+    }
+
+    .preguntas-preguntas p {
+        font-size: 20px;
+    }
+    
+    .preguntas-titulo {
+        margin-top: 20px;
+        font-size: 25px;
+        margin-bottom: 100px;
+    }
+}

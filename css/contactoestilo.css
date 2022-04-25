@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.gridpadre {
+    display: grid;
+    background-image: url(../imagenes/bg.jpg);
+    height: 1000px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.03fr 1fr 1fr 0.02fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "cont1 cont1 cont2 cont2"
+    "form form form form"
+    "footer footer footer footer"
+    ;
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    grid-area: nav;
+}
+
+.contenido1-contacto {
+    background-color: black;
+    grid-area: cont1;
+}
+
+.contenido2-contacto {
+    background-color: rgb(0, 0, 0);
+    grid-area: cont2;
+}
+
+.form {
+    grid-area: form;
+    background-color: black;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    grid-area: footer;
+}
+
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 6px;
+    list-style: none;
+    
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 7px;
+}
+
+.navbar ul li a:hover {
+    animation: boton 0.4s forwards;
+}
+
+@keyframes boton {
+    100% {
+        background-color: white;
+        color: black;
+    }
+}
+.imagenescontacto-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    color: white;
+}
+.imagenescontacto-1 img {
+    height: 260px;
+    width: 240px;
+    border: 24px solid white;
+    border-radius: 20px;
+
+}
+
+.imagenescontacto-2 img {
+    height: 260px;
+    width: 240px;
+    border: 24px solid white;
+    border-radius: 20px;
+
+}
+.imagenescontacto-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    color: white;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    color: white;
+}
+
+.formulario textarea {
+    resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 720px) {
+
+    .gridpadre {
+        display: grid;
+        background-image: url(../imagenes/bg.jpg);
+        height: 1000px;
+        grid-row-gap: 40px;
+        grid-template-columns: 2fr;
+        grid-template-rows: 0.03fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "nav nav nav nav"
+        "cont1 cont1 cont1 cont1"
+        "cont2 cont2 cont2 cont2"
+        "form form form form"
+        "footer footer footer footer"
+        ;
+    } }
+    

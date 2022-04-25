@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.gridpadre {
+    background-image: url(../imagenes/bg.jpg);
+    display: grid;
+    grid-gap: 20px;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.02fr 1fr 0.2fr;
+    grid-template-areas: 
+    "nav nav nav"
+    "mapa mapa mapa"
+    "footer footer footer"
+    ;
+
+}
+
+
+
+nav {
+    background-color: rgb(0, 0, 0);
+    grid-area: nav;
+}
+
+#contenidomapa {
+    background-color: rgb(0, 0, 0);
+    grid-area: mapa;
+
+}
+
+footer {
+    background-color: black;
+    grid-area: footer;
+
+}
+
+
+
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 6px;
+    list-style: none;
+    
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 7px;
+}
+
+.navbar ul li a:hover {
+    animation: boton 0.4s forwards;
+}
+
+@keyframes boton {
+    100% {
+        background-color: white;
+        color: black;
+    }
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+#contenidomapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+@media only screen and (max-width: 750px)  {
+
+
+    .gridpadre {
+        background-image: url(../imagenes/bg.jpg);
+        display: grid;
+        height: 100vh;
+        background-color: red;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.02fr 1fr 0.2fr;
+        grid-template-areas: 
+        "nav nav nav"
+        "mapa mapa mapa"
+        "footer footer footer"
+        ;
+
+    }
+
+    .contenido2-mapa iframe {
+        height: 500px;
+        width: 600px;
+        
+    }
+}
