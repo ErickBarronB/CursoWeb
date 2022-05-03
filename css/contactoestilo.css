@@ -82,6 +82,7 @@ footer {
 .imagenescontacto-1 img {
     height: 260px;
     width: 240px;
+    background-color: white;
     border: 24px solid white;
     border-radius: 20px;
 
@@ -90,6 +91,7 @@ footer {
 .imagenescontacto-2 img {
     height: 260px;
     width: 240px;
+    background-color: white;
     border: 24px solid white;
     border-radius: 20px;
 
